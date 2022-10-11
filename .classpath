@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Selenium Project/jar_files/testng-7.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium Project/jar_files/jcommander-1.82.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium Project/jar_files/jquery-3.6.0.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium Project/jar_files/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium Project/jar_files/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium Project/selenium-java-4.0.0-beta-2/selenium-api-4.0.0-beta-2.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium Project/selenium-java-4.0.0-beta-2/selenium-firefox-driver-4.0.0-beta-2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

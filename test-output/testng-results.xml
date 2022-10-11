@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="12" passed="9" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-10T18:13:01 IST" name="Default suite" finished-at="2022-10-10T18:13:01 IST" duration-ms="394">
+    <groups>
+    </groups>
+    <test started-at="2022-10-10T18:13:01 IST" name="Default test" finished-at="2022-10-10T18:13:01 IST" duration-ms="394">
+      <class name="Demo1.TestNg3">
+        <test-method signature="ModifyCustomer()[pri:0, instance:Demo1.TestNg3@3232a28a]" started-at="2022-10-10T18:13:01 IST" name="ModifyCustomer" finished-at="2022-10-10T18:13:01 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ModifyCustomer -->
+        <test-method signature="createCustomer()[pri:0, instance:Demo1.TestNg3@3232a28a]" started-at="2022-10-10T18:13:01 IST" name="createCustomer" finished-at="2022-10-10T18:13:01 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method signature="editCustomer()[pri:0, instance:Demo1.TestNg3@3232a28a]" started-at="2022-10-10T18:13:01 IST" name="editCustomer" finished-at="2022-10-10T18:13:01 IST" duration-ms="46" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [ABC] but found [ABCD]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [ABC] but found [ABCD]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Demo1.TestNg3.editCustomer(TestNg3.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCustomer -->
+        <test-method signature="deleteCustomer()[pri:0, instance:Demo1.TestNg3@3232a28a]" started-at="2022-10-10T18:13:01 IST" name="deleteCustomer" finished-at="2022-10-10T18:13:01 IST" depends-on-methods="Demo1.TestNg3.editCustomer" duration-ms="3" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Demo1.TestNg3.deleteCustomer() on instance Demo1.TestNg3@3232a28a depends on not successfully finished methods 
+[Demo1.TestNg3.editCustomer() on instance Demo1.TestNg3@3232a28a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Demo1.TestNg3.deleteCustomer() on instance Demo1.TestNg3@3232a28a depends on not successfully finished methods 
+[Demo1.TestNg3.editCustomer() on instance Demo1.TestNg3@3232a28a]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+      </class> <!-- Demo1.TestNg3 -->
+      <class name="Demo1.TestNg">
+        <test-method signature="CreateReport()[pri:0, instance:Demo1.TestNg@48f278eb]" started-at="2022-10-10T18:13:01 IST" name="CreateReport" finished-at="2022-10-10T18:13:01 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateReport -->
+      </class> <!-- Demo1.TestNg -->
+      <class name="Demo1.TestNg1">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="OpenBrowser" finished-at="2022-10-10T18:13:01 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="Login" finished-at="2022-10-10T18:13:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="createCustomer()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="createCustomer" finished-at="2022-10-10T18:13:01 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="Logout" finished-at="2022-10-10T18:13:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="Login" finished-at="2022-10-10T18:13:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="deleteCustomer()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="deleteCustomer" finished-at="2022-10-10T18:13:01 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="Logout" finished-at="2022-10-10T18:13:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="Login" finished-at="2022-10-10T18:13:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="editCustomer()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="editCustomer" finished-at="2022-10-10T18:13:01 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCustomer -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="Logout" finished-at="2022-10-10T18:13:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Demo1.TestNg1@7c711375]" started-at="2022-10-10T18:13:01 IST" name="CloseBrowser" finished-at="2022-10-10T18:13:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Demo1.TestNg1 -->
+      <class name="Demo1.TestNg2">
+        <test-method signature="createCustomer()[pri:0, instance:Demo1.TestNg2@57cf54e1]" started-at="2022-10-10T18:13:01 IST" name="createCustomer" finished-at="2022-10-10T18:13:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method signature="editCustomer()[pri:1, instance:Demo1.TestNg2@57cf54e1]" started-at="2022-10-10T18:13:01 IST" name="editCustomer" finished-at="2022-10-10T18:13:01 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCustomer -->
+        <test-method signature="deleteCustomer()[pri:0, instance:Demo1.TestNg2@57cf54e1]" started-at="2022-10-10T18:13:01 IST" name="deleteCustomer" finished-at="2022-10-10T18:13:01 IST" depends-on-methods="Demo1.TestNg2.editCustomer" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+      </class> <!-- Demo1.TestNg2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
